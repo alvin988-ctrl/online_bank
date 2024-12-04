@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account Categories</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
+  <style>
+    .sidebar {
+      height: 100vh;
+      background-color: #343a40;
+      color: #fff;
+    }
+    .sidebar a {
+      color: #adb5bd;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      color: #fff;
+    }
+    .header {
+      background-color: #6f42c1;
+      color: #fff;
+      padding: 10px 15px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 col-lg-2 sidebar py-4">
+        <h5 class="text-center mb-4">Internet Banking</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Accounts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Finances</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Transactions History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Financial Reports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">System Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Log Out</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-md-9 col-lg-10">
+        <div class="header">Create Account Categories</div>
+        <div class="container py-4">
+          <form>
+            <!-- Fill All Fields -->
+            <div class="alert alert-secondary text-center font-weight-bold" role="alert">
+              Fill All Fields
+            </div>
+
+            <!-- Form Fields -->
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="accountCategoryName">Account Category Name</label>
+                <input type="text" class="form-control" id="accountCategoryName" placeholder="Enter name">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="accountCategoryRates">Account Category Rates % Per Year</label>
+                <input type="number" class="form-control" id="accountCategoryRates" placeholder="Enter rate">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="accountCategoryCode">Account Category Code</label>
+                <input type="text" class="form-control" id="accountCategoryCode" value="ACC-CAT-JZYOP" readonly>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <div class="form-group">
+              <label for="accountCategoryDescription">Account Category Description</label>
+              <textarea class="form-control" id="accountCategoryDescription" rows="4"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-success btn-large">Add Account Category</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+</body>
+</html>

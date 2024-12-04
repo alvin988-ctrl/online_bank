@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Custom styles for the dashboard */
+        body {
+          display: flex;
+          height: 100vh;
+          overflow: hidden;
+        }
+    
+        .sidebar {
+          width: 250px;
+          background-color: #343a40;
+          color: #ffffff;
+          display: flex;
+          flex-direction: column;
+          padding-top: 10px; /* Adjusted padding */
+        }
+    
+        .sidebar .sidebar-header {
+          font-size: 1.5rem;
+          text-align: center;
+          background-color: #495057;
+          padding: 15px 0;
+          margin-bottom: 0; /* Remove bottom margin */
+        }
+    
+        .sidebar .nav {
+          padding: 0; /* Remove padding */
+        }
+    
+        .sidebar .nav-item {
+          width: 100%;
+        }
+    
+        .sidebar .nav-link {
+          color: #ffffff;
+          padding: 10px 20px; /* Adjusted padding */
+        }
+    
+        .sidebar .nav-link:hover {
+          background-color: #495057;
+        }
+    
+        .sidebar .nav-item.active .nav-link {
+          background-color: #007bff;
+        }
+    
+        .content {
+          flex-grow: 1;
+          padding: 20px;
+          overflow-y: auto;
+        }
+        .list-group-item{
+            background-color: beige;
+        }
+       .card-header{
+        font-size: 20px;
+        font-weight: 600;
+       }
+        /* Custom styles to set column widths */
+        .first-column {
+          width: 20%; /* Wider for the first column */
+        }
+        .middle-column {
+          width: 15%; /* Narrower for the middle columns */
+        }
+        .last-column {
+          width: 20%; /* Wider for the last column */
+        }
+        .card-text{
+            margin-left: 2%;
+            font-weight: 500;
+            font-size: 17px;
+        }
+    </style>    
+</head>
+<body>
+    <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <span><i class="fa fa-university" aria-hidden="true"></i> Internet Banking</span>
+    </div>
+   <div class="container"> <span class="mt-3">System Administrator</span></div>
+    <div class="container">
+        <ul class="nav flex-column mt-3">
+            <li class="nav-item active">
+              <a class="nav-link" href="dashboard.html">
+                <i class="fa fa-tachometer-alt"></i> Dashboard
+              </a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="account.html">
+                <i class="fa fa-user-secret" aria-hidden="true"></i> Account
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="staff.html">
+                <i class="fa fa-user"></i> Staff
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="client.html">
+                  <i class="fa fa-users" aria-hidden="true"></i> Client
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create_client_acct.html">
+                  <i class="fa fa-envelope-open" aria-hidden="true"></i> Account 
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-usd" aria-hidden="true"></i> Finances 
+                </a>
+              </li>
+          
+          <span>Advance Modules</span>
+
+          <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-chart-bar"></i> Transactions History
+              </a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-chart-bar"></i> Financial Reports
+              </a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-chart-bar"></i> System Settings 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-sign-out-alt"></i> Logout
+              </a>
+            </li>
+          </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <h5 class="card-header">System Administrator Profile</h5>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-image">
+                    <img src="image/profile placeholder image.jpg" width="100%" alt="">
+                  <p class="card-text">System Administrator</p>
+                  <p class="card-text">@Admin iBanking</p>
+                  <div class="card-footer bg-transparent">Email: admin@gmail.com</div>
+                  <div class="card-footer bg-transparent">Number: iBank-ADM-0516</div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-8">
+            <div class="card text-center">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Update Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">Change Password</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Name</span>
+                </div>
+
+                <input type="text" class="form-control" placeholder="System Administrator" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1"> Email</span>
+                </div>
+
+                <input type="text" class="form-control" placeholder="admin@gmail.com" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Phone</span>
+                </div>
+
+                <input type="text" class="form-control" placeholder="iBank-ADM-0516" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <button type="button" class="btn btn-primary">Update Account</button>
+         </div>
+        </div>
+     </div>
+
+
+                    
+
+  <script src="bootstrap-4.6.2-dist/js/jQuery.js"></script>
+  <script src="bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="img/bank_image.webp">
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet Banking</title>
+  <!-- Bootstrap 4.6 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+
+  <style>
+    body {
+      color: white;
+    }
+
+    .navbar {
+      background-color: black
+      
+    }
+
+    .main-banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      text-align: center;
+      background-image: url(img/bank_image.webp);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      width: 100%;
+    }
+
+    .main-banner .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn-custom {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Internet Banking</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="admin_portal.html" style="color: white;">Admin Portal</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" style="color: white;">Staff Portal</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" style="color: white;">Client Portal</a></li>
+        <li class="nav-item"><a class="nav-link btn btn-success" href="#" style="color: white;">Join Us</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  
+
+  <!-- Main Banner -->
+  <div class="main-banner position-relative">
+    <div class="overlay"></div>
+    <div class="content text-white">
+        
+      <h1>Internet Banking</h1>
+      <p>Achieving financial success through each service we provide.</p>
+      <a href="#" class="btn btn-custom">Get started</a>
+    </div>
+  </div>
+
+  <script src="bootstrap-4.6.2-dist/js/jQuery.js"></script>
+ <script src="bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+ 
+    
+  </body>
+  </html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard with Sidebar</title>
+  <!-- Bootstrap 4.6 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+</head>
+<body>
+<style>
+  .sidebar{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      z-index: 1030;
+      width: 250px;
+  }
+      .content{
+        margin-left: 250px;
+        padding: 20px;
+      }
+</style>
+  <!-- Sidebar -->
+ <div class="d-flex">
+  <nav class="sidebar bg-dark text-white">
+
+      <ul class="nav flex-column mt-4">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#">
+              <i class="fa fa-tachometer-alt"></i> Dashboard
+            </a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link text-white" href="create_client_acct.html">
+              <i class="fa fa-user-secret" aria-hidden="true"></i> Account
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="staff.html">
+              <i class="fa fa-user"></i> Staff
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="client.html">
+                <i class="fa fa-users" aria-hidden="true"></i> Client
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="accounts.html">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i> Account 
+            </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">
+                  <i class="fa fa-usd" aria-hidden="true"></i> Finances 
+              </a>
+            </li>
+        
+        <span>Advance Modules</span>
+
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fa fa-chart-bar"></i> Transactions History
+            </a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fa fa-chart-bar"></i> Financial Reports
+            </a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fa fa-chart-bar"></i> System Settings 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fa fa-sign-out-alt"></i> Logout
+            </a>
+          </li>
+        </ul>
+    </nav>
+    <!-- Main Content -->
+    <div class="content container-fluid">
+      <h1>Admin Dashboard</h1>
+
+  <!-- Example content area -->
+      <div class="row">
+          <div class="col">
+                    <li class="list-group-item"> <i class="fa fa-users" aria-hidden="true"></i> Client 6</li>
+          </div>
+          <div class="col">
+              <li class="list-group-item"> <i class="fa fa-user"></i> Staff 1</li>
+          </div>
+          <div class="col">
+              <li class="list-group-item"> <i class="fa fa-user-secret" aria-hidden="true"></i> Account Types 5</li>
+          </div>
+          <div class="col">
+              <li class="list-group-item"> <i class="fa fa-user-secret" aria-hidden="true"></i> Account 6</li>
+          </div>
+      </div>
+
+      <div class="row mt-3">
+          <div class="col">
+                    <li class="list-group-item">Deposits $ 30038</li>
+          </div>
+          <div class="col">
+              <li class="list-group-item">Withdrawals $ 1221</li>
+              
+          </div>
+          <div class="col">
+              <li class="list-group-item">Transfers $ 2021</li>
+          </div>
+          <div class="col">
+              <li class="list-group-item">Wallet Balance $ 26796</li>
+          </div>
+      </div>
+      
+        <div class="card border-success mt-3">
+            <div class="card-header bg-transparent border-success">Advanced Analytics</div>
+            <div class="card-body">
+              <div class="row">
+                 <div class="col">
+                    <h6 class="card-title">Account Per Acc Types</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <div class="col">
+                    <h6 class="card-title">Transactions</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+       <div class="card-footer bg-transparent border-success">Footer</div>
+    </div>
+                <div class="row mt-3">
+                  <div class="col">
+                            <li class="list-group-item">Total Deposit $ 30038</li>
+                  </div>
+                  <div class="col">
+                      <li class="list-group-item">Total Withdrawals $ 1221</li>
+                      
+                  </div>
+                  <div class="col">
+                      <li class="list-group-item">Total Transfer $ 2021</li>
+                  </div>
+                  <div class="col">
+                      <li class="list-group-item">Total Balance $ 26796</li>
+                  </div>
+              </div>
+
+              <table class="table table-bordered mt-4">
+                <thead class="thead-light">
+                  <tr>
+                    <th class="first-column">Transactionn Code</th>
+                    <th class="first-column">Account No.</th>
+                    <th class="first-column">Type</th>
+                    <th class="first-column">Amount</th>
+                    <th class="first-column">Acct. Owner</th>
+                    <th class="first-column">TimeStamp</th>
+                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>9jQsTdoV6tfqCZzckGw</td>
+                    <td>421873905</td>
+                    <td class="Transfer">Transfer</td>
+                    <td>$ 665</td>
+                    <td>Client Two</td>
+                    <td>09-Sep-2023 05:09:02</td>
+                  </tr>
+                  <tr>
+                    <td>T8dFhG4ZzJ3mLxQ9p</td>
+                    <td>594218736</td>
+                    <td class="deposit">Deposit</td>
+                    <td>$ 8550</td>
+                    <td>Test Client</td>
+                    <td>09-Sep-2023 05:09:07</td>
+                  </tr>
+                  <tr>
+                    <td>V2sRkP5XlN8qYdCjM</td>
+                    <td>873409215</td>
+                    <td class="Withdrawal">Withdrawal</td>
+                    <td>$ 1220</td>
+                    <td>Client 6</td>
+                    <td>09-Sep-2023 05:09:08</td>
+                  </tr>
+                  <tr>
+                    <td>Z7jQpW3rB1cXtK9Lv</td>
+                    <td>237584091</td>
+                    <td class="deposit">Deposit</td>
+                    <td>$ 5000</td>
+                    <td>Client 6</td>
+                    <td>09-Sep-2023 05:09:10</td>
+                  </tr>
+                  <tr>
+                    <td>Z7jQpW3rB1cXtK9Lv</td>
+                    <td>809341672</td>
+                    <td class="Withdrawal">Withdrawal</td>
+                    <td>$ 2400</td>
+                    <td>Client 6</td>
+                    <td>09-Sep-2023 05:09:12</td>
+                  </tr>
+                  <tr>
+                    <td>M4kXyC9jN7hLrQ3Df</td>
+                    <td>416728593</td>
+                    <td class="deposit">Deposit</td>
+                    <td>$ 14000</td>
+                    <td>Client 6</td>
+                    <td>09-Sep-2023 05:09:13</td>
+                  </tr>
+                  <tr>
+                    <td>Q3vGnT5XzF7lK8mYp</td>
+                    <td>192805437</td>
+                    <td>Transfer</td>
+                    <td>$6600</td>
+                    <td>Client 6</td>
+                    <td>09-Sep-2023 05:09:14</td>
+                  </tr>
+                  <tr>
+                    <td>H5jDpX9cY2tRkZ6Ql</td>
+                    <td>765092314
+                  </td>
+                    <td class="Withdrawal">Withdrawal</td>
+                    <td>$ 1100</td>
+                    <td>Client 1</td>
+                    <td>09-Sep-2023 05:09:20</td>
+                  </tr>
+                  <tr>
+                    <td>Y8mKtP4rJ9XzL2qWd</td>
+                    <td>384920176
+                  </td>
+                    <td class="deposit">Deposit</td>
+                    <td>$ 9800</td>
+                    <td>Client 6</td>
+                    <td>09-Sep-2023 05:09:35</td>
+                  </tr>
+                  <tr>
+                    <td>C2nZkQ7yR5lM9pXvG
+                  </td>
+                    <td>521638904
+                  </td>
+                    <td class="deposit">Deposit</td>
+                    <td>$ 4000</td>
+                    <td>Client 6</td>
+                    <td>09-Sep-2023 05:09:44</td>
+                  </tr>
+                  <tr>
+                    <td>F9yXtP4Kc2mL6ZqR</td>
+                    <td>670241983</td>
+                    <td class="deposit">Deposit</td>
+                    <td>$ 22000</td>
+                    <td>Client 6</td>
+                    <td>09-Sep-2023 05:09:47</td>
+                  </tr>
+                  <tr>
+                    <td>W7kLxQ3nR5jM9dCzT</td>
+                    <td>849137502</td>
+                    <td class="deposit">Deposit</td>
+                    <td>$ 11000</td>
+                    <td>Client 6</td>
+                    <td>09-Sep-2023 05:09:50</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+      
+  </div>
+  </div>
+    
+        
+    
+    
+    
+
+  <!-- Bootstrap 4.6 JavaScript and FontAwesome for icons -->
+  <script src="bootstrap-4.6.2-dist/js/jQuery.js"></script>
+  <script src="bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</body>
+</html>

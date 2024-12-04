@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Banking - Create Staff Account</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+    <style>
+        /* Custom styles for sidebar */
+        .sidebar {
+            min-height: 100vh;
+            background-color: #343a40;
+            color: #ffffff;
+        }
+        .sidebar .nav-link {
+            color: #ffffff;
+        }
+        .sidebar .nav-link.active {
+            background-color: #495057;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar">
+                <div class="sidebar-sticky pt-3">
+                    <h5> <span><i class="fa fa-university" aria-hidden="true"></i> Internet Banking</h5>
+                    <ul class="nav flex-column mt-3">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="dashboard.html">
+                            <i class="fa fa-tachometer-alt"></i> Dashboard
+                          </a>
+                        </li>
+                       
+                        <li class="nav-item">
+                          <a class="nav-link" href="account.html">
+                            <i class="fa fa-user-secret" aria-hidden="true"></i> Account
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="staff.html">
+                            <i class="fa fa-user"></i> Staff
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="client.html">
+                              <i class="fa fa-users" aria-hidden="true"></i> Client
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="accounts.html">
+                              <i class="fa fa-envelope-open" aria-hidden="true"></i> Account 
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-usd" aria-hidden="true"></i> Finances 
+                            </a>
+                          </li>
+                      
+                      <span>Advance Modules</span>
+            
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <i class="fa fa-chart-bar"></i> Transactions History
+                          </a>
+                        </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <i class="fa fa-chart-bar"></i> Financial Reports
+                          </a>
+                        </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <i class="fa fa-chart-bar"></i> System Settings 
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <i class="fa fa-sign-out-alt"></i> Logout
+                          </a>
+                        </li>
+                      </ul>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="col-md-9 col-lg-10 ml-sm-auto px-4">
+                <div class="card mt-5">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0">Create Client Account</h4>
+                        <p>Fill All fields</p>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="staffName">Client Name</label>
+                                    <input type="text" class="form-control" id="staffName" placeholder="Enter staff name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="staffNumber">Client Number</label>
+                                    <input type="text" class="form-control" id="staffNumber" value="iBank-STAFF-9735" readonly>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="staffPhoneNumber">Contact</label>
+                                    <input type="text" class="form-control" id="staffPhoneNumber" placeholder="Enter phone number">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="staffGender">National ID No.</label>
+                                    <select id="staffGender" class="form-control">
+                                        <option selected>Select Gender</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="staffEmail">Email</label>
+                                    <input type="email" class="form-control" id="staffEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="staffPassword">Password</label>
+                                    <input type="password" class="form-control" id="staffPassword" placeholder="Enter password">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                               <div class="form-group col-md-6">
+                                    <label for="staffEmail">Adress</label>
+                                    <input type="email" class="form-control" id="staffEmail" placeholder="Enter email">
+                                </div> 
+                               <div class="form-group col-md-6">
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                      <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                      <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                                    </div>
+                                    <div class="input-group-append">
+                                      <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+                                    </div>
+                                  </div>
+                                </div> 
+                                <button type="submit" class="btn btn-success mt-3">Add Client</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
